@@ -1,0 +1,100 @@
+5. Area of a Triangle Using Four Types of User-Defined Functions
+
+Problem Statement
+Write a C program to calculate the area of a triangle by implementing the following four types
+of user-defined functions:
+
+1. No Arguments, No Return Value
+2. Arguments, No Return Value
+3. No Arguments, Returns a Value
+4. Arguments, Returns a Value
+
+Formula
+b = 8.0h = 6.0
+Give feedback
+The area of a triangle is:
+Area = ½ × Base × Height
+
+5.1 No Arguments, No Return Value
+Program
+#include <stdio.h>
+void area()
+{
+float base, height, result;
+printf("Enter base: ");
+scanf("%f", &base);
+printf("Enter height: ");
+scanf("%f", &height);
+result = 0.5 * base * height;
+printf("Area of triangle = %.2f\n", result);
+}
+int main()
+{
+area();
+return 0;
+}
+
+5.2 Arguments, No Return Value
+Program
+#include <stdio.h>
+void area(float base, float height)
+{
+float result;
+result = 0.5 * base * height;
+printf("Area of triangle = %.2f\n", result);
+}
+int main()
+{
+float base, height;
+printf("Enter base: ");
+scanf("%f", &base);
+printf("Enter height: ");
+scanf("%f", &height);
+area(base, height);
+return 0;
+}
+
+5.3 No Arguments, Returns a Value
+Program
+#include <stdio.h>
+float area()
+{
+float base, height;
+float result;
+printf("Enter base: ");
+scanf("%f", &base);
+printf("Enter height: ");
+scanf("%f", &height);
+result = 0.5 * base * height;
+return result;
+}
+int main()
+{
+float result;
+result = area();
+printf("Area of triangle = %.2f\n", result);
+return 0;
+}
+
+5.4 Arguments, Returns a Value
+Program
+#include <stdio.h>
+float area(float base, float height)
+{
+float result;
+result = 0.5 * base * height;
+return result;
+}
+int main()
+{
+float base, height;
+float result;
+printf("Enter base: ");
+scanf("%f", &base);
+printf("Enter height: ");
+scanf("%f", &height);
+result = area(base, height);
+printf("Area of triangle = %.2f\n", result);
+return 0;
+}
+
